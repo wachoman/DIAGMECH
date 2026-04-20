@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DiagMech - Monitoreo Inteligente</title>
+
+<style>
+:root {
+    --gold: #C9A43B;
+    --gold-dark: #A3832E;
+    --dark: #0F172A;
+    --dark2: #1E293B;
+    --light: #F1F5F9;
+    --white: #FFFFFF;
+    --green: #22C55E;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--light);
+    color: var(--dark);
+}
+
+/* NAVBAR */
+header {
+    background-color: var(--dark);
+    color: var(--white);
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: var(--gold);
+}
+
+nav a {
+    color: var(--white);
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(rgba(15,23,42,0.8), rgba(15,23,42,0.8)), url('img1.jpg');
+    background-size: cover;
+    padding: 80px 40px;
+    color: white;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 40px;
+}
+
+.btn {
+    background-color: var(--green);
+    padding: 12px 25px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+/* SECCIONES */
+section {
+    padding: 50px 40px;
+}
+
+.section-dark {
+    background-color: var(--dark2);
+    color: white;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.section-dark .card {
+    background-color: var(--dark);
+}
+
+/* IMÁGENES */
+.img-full {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--dark);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>DiagMech</h1>
+    <nav>
+        <a href="#quees">¿Qué es?</a>
+        <a href="#problema">Problema</a>
+        <a href="#solucion">Solución</a>
+        <a href="#tecnico">Técnico</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Monitoreo Inteligente para Electrodomésticos</h2>
+    <p>Previene fallas, reduce costos y mejora la eficiencia energética</p>
+    <a class="btn">Conocer más</a>
+</section>
+
+<section id="quees">
+    <h2>¿Qué es DiagMech?</h2>
+    <p>
+        DiagMech es un sistema de bajo costo que detecta anomalías en motores o electrodomésticos mediante sonido y vibración.
+        Permite prevenir fallas, optimizar el consumo energético y mejorar la seguridad.
+    </p>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Impacto Social</h3>
+            <p>Acceso a tecnología avanzada para todos</p>
+        </div>
+        <div class="card">
+            <h3>Impacto Económico</h3>
+            <p>Reduce costos de mantenimiento</p>
+        </div>
+        <div class="card">
+            <h3>Impacto Ambiental</h3>
+            <p>Mayor vida útil de equipos</p>
+        </div>
+    </div>
+</section>
+
+<section id="problema" class="section-dark">
+    <h2>Problema Actual</h2>
+    <p>
+        Los electrodomésticos no cuentan con monitoreo interno, lo que genera fallas inesperadas, alto consumo energético y riesgos eléctricos.
+    </p>
+
+    <ul>
+        <li>Gastos imprevistos</li>
+        <li>Incremento de consumo (hasta 25%)</li>
+        <li>Riesgos de cortocircuitos</li>
+    </ul>
+
+    <img src="img2.jpg" class="img-full">
+</section>
+
+<section id="solucion">
+    <h2>Solución: DiagMech</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Monitoreo</h3>
+            <p>Voltaje, corriente, vibración y temperatura</p>
+        </div>
+        <div class="card">
+            <h3>App móvil</h3>
+            <p>Datos en tiempo real</p>
+        </div>
+        <div class="card">
+            <h3>Alertas</h3>
+            <p>Prevención de fallas</p>
+        </div>
+    </div>
+
+    <img src="img3.jpg" class="img-full">
+</section>
+
+<section id="tecnico" class="section-dark">
+    <h2>Funcionamiento Técnico</h2>
+
+    <p>
+        Sensores capturan datos en tiempo real, un microcontrolador procesa la información y la envía a una aplicación móvil mediante WiFi o Bluetooth.
+    </p>
+
+    <ul>
+        <li>Monitoreo continuo</li>
+        <li>Historial de datos</li>
+        <li>Detección de patrones</li>
+    </ul>
+
+    <img src="img4.jpg" class="img-full">
+</section>
+
+<section>
+    <h2>Análisis FODA</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Fortalezas</h3>
+            <p>Solución innovadora y escalable</p>
+        </div>
+        <div class="card">
+            <h3>Oportunidades</h3>
+            <p>Crecimiento del IoT</p>
+        </div>
+        <div class="card">
+            <h3>Debilidades</h3>
+            <p>Falta de datos iniciales</p>
+        </div>
+        <div class="card">
+            <h3>Amenazas</h3>
+            <p>Competencia industrial</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 DiagMech - Proyecto IoT</p>
+</footer>
+
+</body>
+</html>
